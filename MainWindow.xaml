@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_SymPy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_SymPy"
+        mc:Ignorable="d"
+        Title="WPF + SymPy" Height="450" Width="800">
+    <Grid Margin="0,1,0,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.8*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Content="Размер: " HorizontalAlignment="Left" Margin="31,55,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <TextBox Grid.Column="0" x:Name="Size" Margin="161,58,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <Label Grid.Column="0" Content="Мин. число: " HorizontalAlignment="Left" Margin="31,80,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <TextBox Grid.Column="0" x:Name="Low" Margin="161,83,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <Label Grid.Column="0" Content="Макс. число: " HorizontalAlignment="Left" Margin="31,102,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <TextBox Grid.Column="0" x:Name="High" Margin="161,108,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="20"/>
+
+        <ListBox Grid.Column="1" x:Name="NumList">
+            
+        </ListBox>
+
+
+        <Button x:Name="ResultBtn" Content="Нажми меня!" HorizontalAlignment="Left" Margin="31,133,0,0" VerticalAlignment="Top" Width="106" Click="ResultBtn_Click"/>
+    </Grid>
+</Window>
